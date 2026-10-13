@@ -1,4 +1,5 @@
-//Construir un objeto con los datos una pelicula
+//Construir un objeto con los datos de una pelicula
+
 const pelicula = {
   titulo: "Cars: Una aventura sobre ruedas",
   anio: 2006,
@@ -95,7 +96,14 @@ const pelicula = {
   ],
   sinopsis: "Trata de un auto de carrera que quiere ganar la copa pistón.",
   direccion: ["John Lasseter", "Jose Ranft"],
-  escritores: ["John Lasseter", "Dan Fogelman", "Jose Ranft", "Kiel Murray", "Philip Lorin", "Jørgen Klubien"]
+  escritores: [
+    "John Lasseter", 
+    "Dan Fogelman", 
+    "Jose Ranft", 
+    "Kiel Murray", 
+    "Philip Lorin", 
+    "Jørgen Klubien"
+  ]
 }
 
 console.log(pelicula);
