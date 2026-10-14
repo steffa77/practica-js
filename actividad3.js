@@ -1,16 +1,25 @@
 //Función 1:
 //crear una función que reciba un arreglo de números y retorne como resultado
 //un objeto indicándonos cuántos valores son pares e impares
-function arregloNumero(numero){
+//Test, demostración, console.log
+function arregloNumero(numeros){
   let pares = 0
   let impares = 0
+
+  for (let n of numeros){
+  if (n % 2 == 0){
+    pares++;
+  }else{
+    impares++;
+  }
+}
+return {
+  pares: pares,
+  impares: impares
+}
 }
 
-for (let n of numero){
-}
-
-
-//Test, demostración, console.log
+console.log(arregloNumero([2, 5, 8, 3]));
 
 //Función 2:
 //escribir una función que retorne true|false dependiendo si el valor de entrada
@@ -18,3 +27,24 @@ for (let n of numero){
 //de hasta 5 digitos (99999)
 
 //Test, demostración, console.log
+
+function esCapicua(numero){
+  let texto = String(numero);
+  
+  if(texto.length > 5){
+    return false;
+  }
+
+  let invertido = texto.split('').reverse().join('');
+
+  if (texto === invertido){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(esCapicua(1271));
+console.log(esCapicua(1230));
+console.log(esCapicua(3223));
+console.log(esCapicua(4499));
